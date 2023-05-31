@@ -1,0 +1,34 @@
+﻿<Window x:Class="Trapsh.PersonGroupAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trapsh"
+        mc:Ignorable="d"
+        Title="Grup Seçimi" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Height="230" Width="300" MaxHeight="230" MaxWidth="300" Background="Bisque" Loaded="Window_Loaded" PreviewKeyDown="Window_PreviewKeyDown" BorderThickness="3" BorderBrush="#FFA4174A">
+    <Grid x:Name="MainGrid">
+
+        <Grid x:Name="IconGrid" Background="Yellow" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" Height="20" Opacity="0.8" MouseLeftButtonDown="IconGrid_MouseLeftButtonDown">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/Icons/PersonAdd.png" Height="20" Width="20" HorizontalAlignment="Left"/>
+                <TextBlock VerticalAlignment="Center" Text="Grup Seçimi" FontFamily="Segoe UI Black" Margin="5,0,0,0" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="Exit" Height="20" Width="20" Background="Yellow" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,2,0" Cursor="Hand" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" MouseLeftButtonUp="Exit_MouseLeftButtonUp">
+            <TextBlock Text="x" FontFamily="Source Code Pro Black" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+
+        <Grid x:Name="NameGroup" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,35,0,0">
+            <TextBlock x:Name="NameText" FontSize="17" FontFamily="Segoe UI Black" Foreground="Red" Text="" />
+        </Grid>
+
+        <Grid x:Name="BtnGrid" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,60">
+            <Button Cursor="Hand" x:Name="PersonSlctGroupBtn"  Content="Seç" Width="75" Height="35" Background="LawnGreen" BorderThickness="0" FontFamily="Segoe UI Black" Click="PersonSlctGroupBtn_Click" />
+        </Grid>
+
+        <Grid x:Name="GroupList" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="19.5,0,0,19.5" >
+            <ListBox SelectedIndex="0" x:Name="GroupNames" Height="100" Width="260"  HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="17" FontFamily="Agent Orange" Background="Transparent" Foreground="DarkRed" BorderThickness="0" />
+        </Grid>
+
+    </Grid>
+</Window>

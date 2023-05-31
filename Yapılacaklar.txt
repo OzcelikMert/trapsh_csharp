@@ -1,0 +1,2 @@
+1- Selected.Value ye çevir: deðer çekenleri.
+2- Gruplarýn kendi ararlarýnda karþýlaþtýrmasý(Örnek: gruplarýn toplam puanlarýnýn karþýlaþtýrmasý).

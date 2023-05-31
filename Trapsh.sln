@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trapsh", "Trapsh\Trapsh.csproj", "{51A527B3-E90A-4AAF-9938-67DD8E56E731}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Trapsh Setup", "Trapsh Setup\Trapsh Setup.vdproj", "{759DEAA4-5916-4091-85B2-2C8477E016FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrapshClassesDLL", "TrapshClassesDLL\TrapshClassesDLL.csproj", "{365CB986-AC72-425A-B33B-8FD747399D14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A527B3-E90A-4AAF-9938-67DD8E56E731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A527B3-E90A-4AAF-9938-67DD8E56E731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A527B3-E90A-4AAF-9938-67DD8E56E731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A527B3-E90A-4AAF-9938-67DD8E56E731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759DEAA4-5916-4091-85B2-2C8477E016FC}.Debug|Any CPU.ActiveCfg = Debug
+		{759DEAA4-5916-4091-85B2-2C8477E016FC}.Release|Any CPU.ActiveCfg = Release
+		{365CB986-AC72-425A-B33B-8FD747399D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365CB986-AC72-425A-B33B-8FD747399D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365CB986-AC72-425A-B33B-8FD747399D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365CB986-AC72-425A-B33B-8FD747399D14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7D5DE86-D752-4A80-ADAD-E25D0A2E2F3A}
+	EndGlobalSection
+EndGlobal

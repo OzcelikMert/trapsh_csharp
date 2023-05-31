@@ -1,0 +1,11 @@
+﻿<Application x:Class="Trapsh.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Trapsh"
+             StartupUri="LoaderWindow.xaml">
+    <Application.Resources>
+        <ImageSource x:Key="Firstpng">Images/Sorts/First.png</ImageSource>
+        <ImageSource x:Key="Secondpng">Images/Sorts/Second.png</ImageSource>
+        <ImageSource x:Key="Thirdpng">Images/Sorts/Third.png</ImageSource>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,75 @@
+﻿<Window x:Class="Trapsh.PointAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trapsh"
+        mc:Ignorable="d"
+        Title="Puan Ekle" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Height="300" Width="320" MaxHeight="300" MaxWidth="320" Loaded="Window_Loaded" PreviewKeyDown="Window_PreviewKeyDown" BorderThickness="3" BorderBrush="#FF797C75">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="Khaki"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid x:Name="MainGrid">
+
+        <Grid x:Name="SelectYears" Height="100" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,1">
+            <StackPanel Orientation="Vertical">
+
+                <Viewbox Height="15" HorizontalAlignment="Left" Margin="15,0,0,0">
+                    <RadioButton x:Name="NowYear" VerticalContentAlignment="Center" GroupName="YearSelect" Checked="NowYear_Checked">
+                        <TextBlock Text="Bu Yıl" FontFamily="Arial" FontSize="10"/>
+                    </RadioButton>
+                </Viewbox>
+
+                <Viewbox Height="15" HorizontalAlignment="Left" Margin="15,5,0,0">
+                    <RadioButton x:Name="ChangeYear" VerticalContentAlignment="Center" GroupName="YearSelect" Checked="ChangeYear_Checked">
+                        <TextBlock Text="Başka Bir Yıl" FontFamily="Arial" FontSize="10"/>
+                    </RadioButton>
+                </Viewbox>
+                <TextBox x:Name="WriteYear" Height="30" Width="75" MaxLength="4" HorizontalAlignment="Center" Margin="0,5,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF181E91" FontFamily="Agent Orange Bold" FontSize="14" BorderThickness="1" BorderBrush="Red" Background="#FFF3F3F3" PreviewKeyDown="WriteYear_PreviewKeyDown"/>
+            </StackPanel>
+        </Grid>
+
+
+        <Grid x:Name="IconGrid" Background="Khaki" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" Height="20" Opacity="0.8" MouseLeftButtonDown="IconGrid_MouseLeftButtonDown">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/Icons/PointAddDelete.png" Height="20" Width="50" HorizontalAlignment="Left"/>
+                <TextBlock VerticalAlignment="Center" Text="Puan Ekle" FontFamily="Segoe UI Black" Margin="5,0,0,0" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="Exit" Height="20" Width="20" Background="Khaki" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,2,0" Cursor="Hand" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" MouseLeftButtonUp="Exit_MouseLeftButtonUp">
+            <TextBlock Text="x" FontFamily="Source Code Pro Black" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+
+        <Grid x:Name="NameTxt" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0" >
+            <TextBlock x:Name="NamePersn" FontSize="17" FontFamily="Segoe UI Black" Foreground="Red" />
+        </Grid>
+
+        <Grid x:Name="PointTxt" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="28,88,0,192" >
+            <TextBlock x:Name="FirstP" Text="1. Puan" FontFamily="Gill Sans Ultra Bold" FontSize="15" />
+        </Grid>
+
+        <Grid x:Name="PointTxt2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3,88,0,192" >
+            <TextBlock x:Name="SecondP" Text="2. Puan" FontFamily="Gill Sans Ultra Bold" FontSize="15" />
+        </Grid>
+
+        <Grid x:Name="PointTxt3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,88,25,192" >
+            <TextBlock  x:Name="ThirdP" Text="3. Puan" FontFamily="Gill Sans Ultra Bold" FontSize="15" />
+        </Grid>
+
+        <Grid x:Name="PointTxtBxs" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25,103,14,134" Height="57" Width="270">
+            <StackPanel Orientation="Horizontal">
+                <TextBox PreviewKeyDown="FirstPoint_PreviewKeyDown" Margin="0,0,20,0" x:Name="FirstPoint" Height="40" Width="73" Text="0" TextAlignment="Center" FontSize="36" FontFamily="Stencil" MaxLength="2" />
+                <TextBox PreviewKeyDown="SecondPoint_PreviewKeyDown" x:Name="SecondPoint" Height="40" Width="75" Text="0" TextAlignment="Center" FontSize="36" FontFamily="Stencil" MaxLength="2" />
+                <TextBox PreviewKeyDown="ThirdPoint_PreviewKeyDown" Margin="20,0,0,0" x:Name="ThirdPoint" Height="40" Width="73" Text="0" TextAlignment="Center" FontSize="36" FontFamily="Stencil" MaxLength="2" />
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="PointAddd"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,24,39">
+            <Button Cursor="Hand" x:Name="PointAddBtn"  Content="Puan Ekle" Width="100" Height="35"  Background="ForestGreen" BorderThickness="0" FontFamily="Segoe UI Black" Click="PointAddBtn_Click" />
+        </Grid>
+
+    </Grid>
+</Window>

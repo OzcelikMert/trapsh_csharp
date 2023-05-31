@@ -1,0 +1,40 @@
+﻿<Window x:Class="Trapsh.ChangeGroupName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trapsh"
+        mc:Ignorable="d"
+        Title="Grup Güncelle" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Height="180" Width="300" MaxHeight="180" MaxWidth="300" Loaded="Window_Loaded" PreviewKeyDown="Window_PreviewKeyDown" BorderThickness="3" BorderBrush="#FFD63232">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Aqua" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid x:Name="MainGrid">
+
+        <Grid x:Name="IconGrid" Background="Cyan" VerticalAlignment="Top" HorizontalAlignment="Left" Width="275" Height="20" Opacity="0.8" MouseLeftButtonDown="IconGrid_MouseLeftButtonDown">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Images/Icons/GroupUpdate.png" Height="20" Width="20" HorizontalAlignment="Left"/>
+                <TextBlock VerticalAlignment="Center" Text="Grup Güncelle" FontFamily="Segoe UI Black" Margin="5,0,0,0" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="Exit" Background="Cyan" Height="20" Width="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,2,0" Cursor="Hand" MouseEnter="Exit_MouseEnter" MouseLeave="Exit_MouseLeave" MouseLeftButtonUp="Exit_MouseLeftButtonUp">
+            <TextBlock Text="x" FontFamily="Source Code Pro Black" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+
+        <Grid x:Name="NameGroup" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,50,0,0">
+            <TextBlock x:Name="NameTextGroup" FontSize="17" FontFamily="Agent Orange" Foreground="DarkRed" />
+        </Grid>
+
+        <Grid x:Name="ChangeGrid" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,95,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBox CharacterCasing="Upper" x:Name="GroupNameTxt" Width="150" Height="35" BorderThickness="1" FontFamily="MV Boli" FontSize="20" TextAlignment="Center" MaxLength="14" />
+                <Button Cursor="Hand" x:Name="GoupNameBtn"  Content="Güncelle" Width="75" Height="35" Margin="15,0,0,0" Background="DeepSkyBlue" BorderThickness="0" FontFamily="Segoe UI Black" Click="GoupNameBtn_Click" />
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
