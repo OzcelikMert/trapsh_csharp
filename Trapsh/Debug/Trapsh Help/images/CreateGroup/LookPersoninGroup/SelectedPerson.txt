@@ -1,6 +1,0 @@
-1- Kayıtlı grubun üstüne 2 kere tıklanılır.
-2- Çıkan pencerede bulunan grup üyelerinden bilgisi ögrenilmek
-istenilene çift tıklanılır.
-3- Tarih yazan kısım ile önceden bilgileri bulunan kişilerin
-önceki yıllarda gösterdiği puan performansına bakılır.
-4- istenilirse birden fazla pencere açılabilir.
