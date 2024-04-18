@@ -1,0 +1,111 @@
+#SourceMiddle {
+width: 90%;
+height: auto;
+background-color: rgba(51,51,51,0.4);
+margin-top: 50px;
+border-radius: 30px;
+margin: auto;
+margin-top: 45px;
+margin-bottom: 15px;
+}
+
+#DivLane1 {
+float: left;
+width: 100%;
+}
+
+#SelectedIcon-Image {
+float: left;
+margin: 30px;
+height: 150px;
+width: 150px;
+margin-left: 50px ;
+text-align: center;
+display: block;
+}
+
+#SelectedIcon-Image img{
+margin-top: 85px;
+width: 100px;
+}
+
+#SelectedIcon-Text {
+margin-left: 50px;
+margin-top: 100px;
+display: block;
+}
+
+#SelectedIcon-Text h1{
+color: darkgreen;
+text-shadow: 4px 3px 2px #000;
+font-size: 70px;
+float: left;
+font-family: sans-serif;
+}
+
+#SelectedIcon-Text h2{
+color: darkgreen;
+text-shadow: 5px 4px 3px #000;
+font-size: 120px;
+float: left;
+margin-top: 0px;
+font-family: sans-serif;
+}
+
+#DivLane2 {
+width: 85%;
+text-align: left;
+margin-left: 8%;
+font-family: sans-serif;
+color: white;
+font-size: 15px;
+}
+
+
+#DivLane3{
+float: left;
+width: 43%;
+font-family: sans-serif;
+color: white;
+font-size: 15px;
+margin-top: 20px;
+}
+
+#DivLane4{
+margin-top: 20px;
+float: left;
+width: 43%;
+font-family: sans-serif;
+color: white;
+font-size: 15px;
+}
+
+#Middle {
+width: 70%;
+height: auto;
+margin: auto;
+background-color: rgba(51,51,51,0.4);
+margin-top: 50px;
+border-radius: 30px;
+}
+
+#SourceMiddle2 {
+width: 90%;
+height: auto;
+background-color: rgba(51,51,51,0.4);
+margin-top: 50px;
+border-radius: 30px;
+margin: auto;
+margin-top: 45px;
+margin-bottom: 15px;
+}
+
+#DivLane1 h4{
+color: white;
+text-shadow: 5px 4px 3px #000;
+font-size: 40px;
+margin-left: 20px;
+float: left;
+margin-top: 0px;
+font-family: sans-serif;
+}
